@@ -26,10 +26,11 @@ class InputForm extends Component {
     console.log('submitted: ', this.state)
     event.preventDefault();
     contactList.push(this.state);
-    console.log('second contactList: ', contactList[1])
+
   }
 
   render () {
+
     return(
       <div>
       <AppBar title = "Add a Contact" />
@@ -64,6 +65,7 @@ class InputForm extends Component {
       </CardActions>
       </Card>
     </form>
+      <ul>{contactList[0]}</ul>
     </div>
     )
   }
